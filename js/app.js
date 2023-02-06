@@ -7,6 +7,34 @@ let slides = [
 	'./img/04.jpg',
 	'./img/05.jpg',
 ]
+let img = document.createElement("img")
+img.src = slides[0];
+let src = document.getElementById('img1')
+src.appendChild(img)
+
+
+let img2 = document.createElement("img")
+img2.src = slides[1];
+let src2 = document.getElementById('img2')
+src2.appendChild(img2)
+
+let img3 = document.createElement("img")
+img3.src = slides[2];
+let src3 = document.getElementById('img3')
+src3.appendChild(img3)
+
+let img4 = document.createElement("img")
+img4.src = slides[3];
+let src4 = document.getElementById('img4')
+src4.appendChild(img4)
+
+let img5 = document.createElement("img")
+img5.src = slides[4];
+let src5 = document.getElementById('img5')
+src5.appendChild(img5)
+
+
+
 let indiceSlideAttiva = 0
 let slideElements = document.getElementsByClassName('slide')
 console.log(slideElements)
@@ -32,12 +60,8 @@ rightBtnElement.addEventListener('click', function () {
 
 	console.log('next slide', indiceSlideAttiva)
     
-    console.log(indiceSlideAttivaBlocco)
-    }
-
-
-
     
+    }  
     
 })
 leftBtnElement.addEventListener('click', function () {
@@ -56,13 +80,9 @@ leftBtnElement.addEventListener('click', function () {
 
 	console.log('next slide', indiceSlideAttiva)
     
-    console.log(indiceSlideAttivaBlocco)
+    
     }
-
-
-
-    
-    
+     
 })
 
 
